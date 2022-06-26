@@ -21,9 +21,5 @@
     "chokidar": "^3.5.2",
     "rimraf": "3.0.2",
     "servor": "4.0.2"
-  },
-  "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
   }
 }
