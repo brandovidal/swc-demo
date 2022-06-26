@@ -5,29 +5,29 @@
 Instalar paquetes
 
 ```
-yarn install
+npm install
 ```
 
 Ejecutar web
 
 ```
-yarn start
+npm run start
 ```
 
 Compilar carpeta de scripts a ES5
 
 ```
-yarn dev
+npm run dev
 ```
 
 Compilar carpeta de scripts minificada a ES5
 
 ```
-yarn build
+npm run build
 ```
 
 Limpiar carpeta de paquetes y scripts
 
 ```
-yarn clean
+npm run clean
 ```

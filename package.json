@@ -6,13 +6,13 @@
   "license": "MIT",
   "scripts": {
     "start": "servor src index.html 5500 --reload --browse --static",
-    "dev": "yarn run clean:dev && npx swc src/* --only **/*.js --out-dir local --config-file .swcrc",
-    "watch": "yarn run clean:dev && npx swc src/* --only **/*.js --out-dir local --config-file .swcrc -w",
-    "build": "yarn run clean:dist && npx spack",
+    "dev": "npm run clean:dev && npx swc src/* --only **/*.js --out-dir local --config-file .swcrc",
+    "watch": "npm run clean:dev && npx swc src/* --only **/*.js --out-dir local --config-file .swcrc -w",
+    "build": "npm run clean:dist && npx spack",
     "clean:dev": "rimraf local/",
     "clean:dist": "rimraf dist/",
-    "clean": "yarn run clean:dev && yarn run clean:dist",
-    "clean:all": "yarn run clean && rimraf node_modules"
+    "clean": "npm run clean:dev && npm run clean:dist",
+    "clean:all": "npm run clean && rimraf node_modules"
   },
   "devDependencies": {
     "@swc/cli": "0.1.46",
@@ -21,5 +21,9 @@
     "chokidar": "^3.5.2",
     "rimraf": "3.0.2",
     "servor": "4.0.2"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
